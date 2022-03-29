@@ -32,5 +32,25 @@ It also calls several methods on each instance from their relative classes.
 ## Problem with SecureBankAccount class:
 
 It's possible to deposit an amount of 0 and earn a 50 reward each time you call mySecureBankAccount.depositAmount(0).  
-Fix - Refactor depositAmount to check if it's the first deposit or if we want to award every deposit set a minimum deposit to earn award.
+Suggested fix - Refactor depositAmount to check if it's the first deposit or if we want to award every deposit set a minimum deposit to earn award.  
+
+---
+## Extension Challenge
+
+### Refactored:  
+1. Abstracted conversion to fahrenheit into its own method.  
+2. Changed string value comparisons from == to equals().  
+3. Changed if statement of checkLocation() to switch statement.  
+4. Renamed check1() method to checkLocation().  
+5. Renamed check2() method to checkTemperature.
+6. Removed braces from if/elseif statements in checkTemperature().  
+7. Renamed print() to printMessage().  
+8. Made class fields finals.  
+
+### Considerations:
+1. I considered using finals for the hard coded numbers, I came to the conclusion that they don't repeat, and to be honest I didn't know what to call them.  
+
+### Unit Tests:
+I've written four unit tests to test for the correct messages.
+I'll add more at a later date 🤓
 
